@@ -1,0 +1,371 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 15px;
+}
+
+.mycontainer {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.mycontainer img {vertical-align: middle;margin-bottom:10%;}
+
+.mycontainer .mycontent {
+    position: absolute;
+    bottom: 15%;
+    background: rgba(0, 0, 0, 0.7); /* Black background with transparency */
+	 color: white;
+    //padding-left: 5%;
+    //padding-right: 5%;
+	width:auto;
+	height:20%;
+	text-align:center;
+	
+  font-size: 20px;
+  
+    padding-top: 3px;
+	padding-bottom:0px;
+	padding-left:20px;
+	padding-right:20px;
+ //  right: 20px;
+  //  background-color: black;
+   
+}
+.mycontainer img:hover {
+  background-color:black;
+  opacity:0.8;
+}
+
+/*
+.mycontainer .mycontent:hover {
+  background-color:black;
+  opacity:0.8;
+}
+*/
+
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+ // background-color: black;
+  overflow: hidden;
+  width: 0;
+  height: 30%;
+  transition: .5s ease;
+  opacity:0.8;
+}
+
+.mycontainer:hover .overlay {
+  width: 100%;
+  //background-color:black;
+  opacity:0.8;
+}
+
+.text {
+  color: red;
+  font-size: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+
+
+
+
+
+/* Add a for star on images */
+.star {
+    color: silver;
+	  font-size: 20px;	
+	//background-color:white;
+}
+/*end of star on images */	
+
+
+
+
+/* Add for images of item on main page */
+.our-special-img
+
+{
+height:340px;
+width:350px;
+//background-image:url("../images/300.jpg");
+//border:2px solid black;
+background-size:100% 100%;
+}
+/* end of images of item on main page */
+
+
+
+
+
+/* Add a for carousel-inner image size */
+	
+.carousel-inner{
+  width:100%;
+  max-height: 600px !important;
+}
+
+
+
+
+
+
+
+.mybuttons{
+    position: relative;
+    max-width: 300px;
+height:80px;
+//background-color:blue;
+margin:5px;
+margin-top:20px;
+   	
+}
+
+
+
+
+
+		/* Add a for social media buttons */
+		a {
+			color: #2098D1;
+			text-decoration: none;
+		}
+		a:hover {
+			
+			text-decoration: none;
+		}
+		
+		.fa 
+		{
+			  padding: 20px;
+			  font-size: 30px;
+			  width: 65px;
+			  text-align: center;
+			  text-decoration: none;
+			  margin: 5px 2px;
+			  border-radius: 50%;
+		}
+	
+		.fa:hover 
+		{
+			opacity: 0.7;
+			text-decoration: none;
+			color: aqua;
+		}
+
+		.fa	
+		{
+		  background: black;
+		  color: white;
+		}
+		/*end of social media buttons */
+		
+		
+		
+		/* Add a for footer links growing effect */
+		.hvr-grow 
+		{
+			  display: inline-block;
+			  vertical-align: middle;
+			  -webkit-transform: translateZ(0);
+			  transform: translateZ(0);
+			  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+			  -webkit-backface-visibility: hidden;
+			  backface-visibility: hidden;
+			  -moz-osx-font-smoothing: grayscale;
+			  -webkit-transition-duration: 0.3s;
+			  transition-duration: 0.3s;
+			  -webkit-transition-property: transform;
+			  transition-property: transform;color: white;
+		}
+		
+		.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active
+		{
+			  -webkit-transform: scale(1.1);
+			  transform: scale(1.1);
+			  text-decoration: none;
+			  color: white;
+		}
+
+
+		@-webkit-keyframes hvr-buzz {
+		  50% {
+			-webkit-transform: translateX(3px) rotate(2deg);
+			transform: translateX(3px) rotate(2deg);
+		  }
+
+		  100% {
+			-webkit-transform: translateX(-3px) rotate(-2deg);
+			transform: translateX(-3px) rotate(-2deg);
+		  }
+		}
+
+		@keyframes hvr-buzz {
+		  50% {
+			-webkit-transform: translateX(3px) rotate(2deg);
+			transform: translateX(3px) rotate(2deg);
+		  }
+
+		  100% {
+			-webkit-transform: translateX(-3px) rotate(-2deg);
+			transform: translateX(-3px) rotate(-2deg);
+		  }
+		}
+
+		.hvr-buzz {
+		  display: inline-block;
+		  vertical-align: middle;
+		  -webkit-transform: translateZ(0);
+		  transform: translateZ(0);
+		  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+		  -webkit-backface-visibility: hidden;
+		  backface-visibility: hidden;
+		  -moz-osx-font-smoothing: grayscale;
+		}
+		.hvr-buzz:hover, .hvr-buzz:focus, .hvr-buzz:active {
+		  -webkit-animation-name: hvr-buzz;
+		  animation-name: hvr-buzz;
+		  -webkit-animation-duration: 0.15s;
+		  animation-duration: 0.15s;
+		  -webkit-animation-timing-function: linear;
+		  animation-timing-function: linear;
+		  -webkit-animation-iteration-count: infinite;
+		  animation-iteration-count: infinite;
+		}
+				/*end of footer links growing effect */
+	
+	
+	
+	
+		
+		/* Add a menu buttons eg veg,nonveg,desserts */
+		/* danger button */
+		.btn-danger {
+			background-color: #FFF;
+			color: #ac2925;
+			border-color: #d2322d;
+			border-radius: 25px;
+		}
+		.btn-danger:hover,
+		.btn-danger:focus,
+		.btn-danger:active {
+			background-color: black;
+			color: #FFF;
+			border-color: #ac2925;
+		}
+    
+		/* SHADOW/GLOW TRANSITIONS */
+		/* Glow */
+		.hvr-glow {
+		  display: inline-block;
+		  vertical-align: middle;
+		  -webkit-transform: translateZ(0);
+		  transform: translateZ(0);
+		  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+		  -webkit-backface-visibility: hidden;
+		  backface-visibility: hidden;
+		  -moz-osx-font-smoothing: grayscale;
+		  -webkit-transition-duration: 0.3s;
+		  transition-duration: 0.3s;
+		  -webkit-transition-property: box-shadow;
+		  transition-property: box-shadow; 
+																		 // height:50px;
+																		  //width:200px;
+																		 // background-color:aqua;
+																		 // font-size:25px;
+																		  text-align:center;
+																		 // border:2px solid black;
+		}
+		.hvr-glow:hover, .hvr-glow:focus, .hvr-glow:active {
+		  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+		}
+
+		/* Grow */
+		.hvr-grow {
+		  display: inline-block;
+		  vertical-align: middle;
+		  -webkit-transform: translateZ(0);
+		  transform: translateZ(0);
+		  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+		  -webkit-backface-visibility: hidden;
+		  backface-visibility: hidden;
+		  -moz-osx-font-smoothing: grayscale;
+		  -webkit-transition-duration: 0.3s;
+		  transition-duration: 0.3s;
+		  -webkit-transition-property: transform;
+		  transition-property: transform;
+		}
+		.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+		  -webkit-transform: scale(1.1);
+		  transform: scale(1.1);
+		}
+
+
+		.btn-lg.round {
+			border-radius: 24px;
+		}
+		/* end of menu buttons eg veg,nonveg,desserts */
+		
+		
+		
+		
+		
+	
+
+
+
+
+/* 
+
+I will show you how to change a height of a standard Bootstrap navbar.
+
+*/
+
+.navbar {
+  min-height: 80px;
+}
+
+.navbar-brand {
+  padding: 0 15px;
+  height: 80px;
+  line-height: 80px;
+}
+
+.navbar-toggle {
+  /* (80px - button height 34px) / 2 = 23px */
+  margin-top: 23px;
+  padding: 9px 10px !important;
+}
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    /* (80px - line-height of 27px) / 2 = 26.5px */
+    padding-top: 26.5px;
+    padding-bottom: 26.5px;
+    line-height: 27px;
+  }
+}
+
+body {
+padding-right:0px !important;
+margin-right:0px !important;
+}
+.modal {
+overflow-y: hidden;
+}
